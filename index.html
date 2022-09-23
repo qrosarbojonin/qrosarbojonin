@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <meta property="og:title" content="Qrosarbojonin" />
-    <meta property="og:url" content="http://www.townimpex.in/" />
+    <meta property="og:url" content="https://qrosarbojonin.github.io/qrosarbojonin/" />
     <meta property="og:description" content="Qrosarbojonin">
     <meta property="og:image"
         content="https://res.cloudinary.com/dcpl1fbjn/image/upload/v1605782829/7f182eb5-1fbf-421e-b6f4-f48d4c29e5b7_200x200_x7cg0w.png">
@@ -103,7 +103,7 @@
             <h2 class="text-center mt-0">Timings</h2>
             <hr class="divider my-4" />
             <div class="row">
-                <div class="col-lg-8 offset-2 text-center">
+                <div class="col-lg-8 offset-lg-2 text-center">
                     <div class="mt-5">
                         <table>
                             <thead>
@@ -113,10 +113,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>2:00 AM to 6:00 AM </td>
-                                    <td>Decoration & Protima Installation</td>
-                                </tr>
                                 <tr>
                                     <td>5:00 AM to 8:00 AM</td>
                                     <td>Puja Ghot Sthapon </td>
@@ -237,38 +233,35 @@
                     <hr class="divider my-4" />
                 </div>
             </div>
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
-                                required="required" data-validation-required-message="Please enter your name.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
-                                required="required" data-validation-required-message="Please enter your email address.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group mb-md-0">
-                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
-                                required="required" data-validation-required-message="Please enter your phone number.">
-                            <p class="help-block text-danger"></p>
-                        </div>
+            <form id="contactForm" name="sentMessage">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
+                            data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" placeholder="Your Message *" required="required"
-                                data-validation-required-message="Please enter a message." aria-invalid="false"
-                                spellcheck="false"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                            required="required" data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group mb-md-0">
+                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required"
+                            data-validation-required-message="Please enter your phone number.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <textarea class="form-control" id="message" placeholder="Your Message *" required="required"
+                            data-validation-required-message="Please enter a message." aria-invalid="false"
+                            spellcheck="false"></textarea>
+                        <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="text-center">
                     <div id="success"></div>
-                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit"
-                        onclick="onMailSend()">Send
+                    <button class="btn btn-primary btn-xl text-uppercase" id="submit" type="submit">Send
                         Message</button>
                 </div>
             </form>
