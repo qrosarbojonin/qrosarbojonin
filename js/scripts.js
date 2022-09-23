@@ -30,8 +30,10 @@
   var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-scrolled");
+      $(".logo-text").removeClass("text-white");
     } else {
       $("#mainNav").removeClass("navbar-scrolled");
+      $(".logo-text").addClass("text-white");
     }
   };
   // Collapse now if page is not at top
@@ -57,18 +59,15 @@
 
 })(jQuery);
 
-$(document).ready(function () {
-  $("#submit").on("click", function () {
-    var name = document.getElementById("name").value;
-    var emailId = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var message = document.getElementById("message").value;
-    if (name === '' || emailId === '' || phone === '' || message === '') {
-      alert('Please fill all details in the form');
-    } else {
-      window.location.href = "mailto:info@noahvalvescompany.com?subject=NOAH VALVES ENQUIRY&body=Name: " + name + "%0DEmail: " + emailId + "%0DPhone: " + phone + "%0DMessage: " + message;
+function onMailSend() {
+  var name = document.getElementById("name").value;
+  var emailId = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var message = document.getElementById("message").value;
+  if (name === '' || emailId === '' || phone === '' || message === '') {
+    alert('Please fill all details in the form');
+  } else {
+    window.location.href = "mailto:queretaro.sarbojonin@gmail.com?subject=Contact: QUERETARO SARBOJONIN DURGOTSAB&body=Name: " + name + "%0DEmail: " + emailId + "%0DPhone: " + phone + "%0DMessage: " + message;
 
-    }
-  });
-
-});
+  }
+}
