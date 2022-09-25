@@ -10139,6 +10139,9 @@ header.masthead h1 {
 #products .container-fluid .product-box:hover .product-box-caption, #products .container-sm .product-box:hover .product-box-caption, #products .container-md .product-box:hover .product-box-caption, #products .container-lg .product-box:hover .product-box-caption, #products .container-xl .product-box:hover .product-box-caption {
   opacity: 1;
 }
+.product-box img{
+  height: 100%;
+}
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
