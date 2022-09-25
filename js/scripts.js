@@ -71,3 +71,20 @@ function onMailSend() {
 
   }
 }
+
+$('#gallery').imagesGrid({
+  images: [
+    'assets/img/images/Image1.jpg',
+    'assets/img/images/Image2.jpg',
+    'assets/img/images/Image3.jpg',
+    'assets/img/images/Image4.jpg',
+    'assets/img/images/Image5.jpg',
+    'assets/img/images/Image6.jpg',
+  ],
+  align: true,
+  nextOnClick: true,
+  showViewAll: 'more',
+  getViewAllText: function () {
+    return 'View all';
+  }
+});

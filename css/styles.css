@@ -7351,7 +7351,7 @@ button.bg-dark:focus {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 11;
 }
 
 .fixed-bottom {
@@ -10138,9 +10138,6 @@ header.masthead h1 {
 }
 #products .container-fluid .product-box:hover .product-box-caption, #products .container-sm .product-box:hover .product-box-caption, #products .container-md .product-box:hover .product-box-caption, #products .container-lg .product-box:hover .product-box-caption, #products .container-xl .product-box:hover .product-box-caption {
   opacity: 1;
-}
-.product-box img{
-  height: 100%;
 }
 
 .text-white-75 {
