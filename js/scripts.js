@@ -67,7 +67,7 @@ function onMailSend() {
   if (name === '' || emailId === '' || phone === '' || message === '') {
     alert('Please fill all details in the form');
   } else {
-    window.location.href = "mailto:queretaro.sarbojonin@gmail.com?subject=Contact: QUERETARO SARBOJONIN DURGOTSAB&body=Name: " + name + "%0DEmail: " + emailId + "%0DPhone: " + phone + "%0DMessage: " + message;
+    window.location.href = "mailto:admin@queretarosarbojonin.org?subject=Contact: QUERETARO SARBOJONIN DURGOTSAB&body=Name: " + name + "%0DEmail: " + emailId + "%0DPhone: " + phone + "%0DMessage: " + message;
 
   }
 }
